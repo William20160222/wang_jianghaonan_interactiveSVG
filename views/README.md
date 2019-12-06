@@ -18,7 +18,7 @@ https://github.com/William20160222/wang_jianghaonan_interactiveSVG.git
 
 1.Install application generator tool, the Node.js, NPM plugin and Sass.
 
-2.Create a package.js in file - $ npm init
+2.Create a package.json file - $ npm init
 
 3.Please do not modify any files that may make the website inoperable, including file naming。
 
