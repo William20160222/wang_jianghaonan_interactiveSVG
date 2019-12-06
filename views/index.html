@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- import waypoint and gsap -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <title>Fruit Nutrition Table</title>
+</head>
+<body>
+    <h1 class="main-header">Nutrition Facts And Nutrition Summary Of Fruit</h1>
+    <main>
+        <!-- if we were using a framework, these might be 6-col or something-->
+        <section id="fruit1">
+          <div class="label_wrapper">
+            <h1 class="hidden">Avocado</h1>
+            <object data="images/avocado.svg" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
+            <span class="see-more" data-target="1">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Avocado</h3>
+            <p>
+              Avocado is the fruit of the avocado tree, scientifically known as Persea americana.This fruit is prized for its high nutrient value and is added to various dishes due to its good flavor and rich texture. It is the main ingredient in guacamole.
+            </p>
+            
+          </div>
+        </section>
+        
+        <section id="fruit2">
+          <div class="label_wrapper">
+            <h1 class="hidden">Apple</h1>
+            <object data="images/apple.svg" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
+            <span class="see-more" data-target="2">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Apple</h3>
+            <p>
+              Apples are high in fiber, vitamin C, and various antioxidants. They are also very filling, considering their low calorie count. Studies show that eating apples can have multiple benefits for your health.
+            </p>
+            
+          </div>
+        </section>
+
+        <section id="fruit3">
+          <div class="label_wrapper">
+            <h1 class="hidden">Banana</h1>
+            <object data="images/banana.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="3">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Banana</h3>
+            <p>
+              Bananas are a rich source of carbs, which occur mainly as starch in unripe bananas and sugars in ripe bananas.
+            </p>
+          </div>
+        </section>
+
+        <section id="fruit4">
+          <div class="label_wrapper">
+            <h1 class="hidden">Blueberry</h1>
+            <object data="images/blueberries.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="4">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Blueberry</h3>
+            <p>
+              Many studies have suggested that increasing consumption of plant foods such as blueberries decreases the risk of obesity, diabetes, heart disease, and overall mortality. Plant foods may also promote hair and skin health, increased energy, and overall lower weight.
+            </p>
+          </div>
+        </section>
+
+        <section id="fruit5">
+          <div class="label_wrapper">
+            <h1 class="hidden">Coconut</h1>
+            <object data="images/coconut.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="5">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Coconut</h3>
+            <p>
+              Coconut is the fruit of the coconut palm. It’s used for its water, milk, oil, and tasty meat. Coconuts have been grown in tropical regions for more than 4,500 years but recently increased in popularity for their flavor, culinary uses, and potential health benefits. 
+            </p>
+          </div>
+        </section>
+
+        <section id="fruit6">
+          <div class="label_wrapper">
+            <h1 class="hidden">Dragon-Fruit</h1>
+            <object data="images/dragon-fruit.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="6">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Dragon-Fruit</h3>
+            <p>
+              Dragon fruit is a tropical fruit that has become increasingly popular in recent years. Though people primarily enjoy it for its unique look and taste, evidence suggests it may provide health benefits as well.
+            </p>
+          </div>
+        </section>
+
+        <section id="fruit7">
+          <div class="label_wrapper">
+            <h1 class="hidden">Peach</h1>
+            <object data="images/peach.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="7">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Peach</h3>
+            <p>
+              Peaches are high in fiber, vitamins, and minerals. They also contain beneficial plant compounds like antioxidants, which can help protect your body from aging and disease.
+            </p>
+          </div>
+        </section>
+
+        <section id="fruit8">
+          <div class="label_wrapper">
+            <h1 class="hidden">Pineapple</h1>
+            <object data="images/pineapple.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="8">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Pineapple</h3>
+            <p>
+              Pineapples are tropical fruits that are rich in vitamins, enzymes and antioxidants. They may help boost the immune system, build strong bones and aid indigestion. And, despite their sweetness, pineapples are low in calories.
+            </p>
+          </div>
+        </section>
+
+
+        <article class="popover">
+          <h4 class="Name">Name:</h4>
+          <p class="Calories">Calories:</p>
+          <p class="Protein">Protein:</p>
+          <p class="Fiber">Fiber:</p>
+          <p class="VitaminC">Vitamin C:</p>
+          <p class="Iron">Iron:</p>
+          <p class="Fat">Fat:</p>
+        </article>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
